@@ -1,0 +1,9 @@
+[build]
+  command = "bun run build"
+  publish = "dist/client"
+
+# SPA fallback so TanStack Router client routes work on deep links / refresh.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
