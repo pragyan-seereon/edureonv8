@@ -1,9 +1,14 @@
+
+
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "bun run build",
-  "outputDirectory": "dist/client",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".output/public",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ],
   "cleanUrls": true,
   "trailingSlash": false
